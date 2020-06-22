@@ -13,7 +13,7 @@
       <nuxt-link to="/drummer" class="content d-flex flex-column text-center justify-content-center">
         <h2>Drummer</h2>
         <p>
-          Self-taught drummer, I'm covering songs on YouTube !
+          Self-taught drummer, I cover songs on YouTube !
         </p>
       </nuxt-link>
       <div class="bg" style="background-image:url(/drums.jpg)"></div>

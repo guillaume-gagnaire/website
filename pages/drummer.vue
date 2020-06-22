@@ -10,7 +10,16 @@
 
     <p>Double pedal lovers, subscribe to my <a href="https://www.youtube.com/channel/UCeME3-22NI6fsq9tzT-jpOQ" target="_blank">Youtube channel</a>!</p>
 
-    <iframe width="560" height="315" style="margin: 42px auto 0 auto" src="https://www.youtube.com/embed/KQSrOuz9-Ck" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <h2 style="margin-top: 42px;">My drumset</h2>
+
+    <img src="/drums-top.jpg" alt="" />
+    <p>
+      It is an electronic drumset made by me, with a personalized module being designed. It will have new cymbals soon, to bring shine and playing comfort!
+    </p>
+
+    <h2 style="margin-top: 42px;">Some videos</h2>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/KQSrOuz9-Ck" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </article>
 </template>
 
@@ -40,10 +49,10 @@ export default {
       margin-bottom: 42px;
     }
 
-    .photo {
-      float: left;
-      margin: 0 20px 20px 0;
-      max-width: 200px;
+    img {
+      display: block;
+      margin: 20px 0 30px;
+      width: 100%;
     }
   }
 </style>
