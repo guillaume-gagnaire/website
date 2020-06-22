@@ -10,7 +10,7 @@
 
     <p>I am committed to bringing my expertise to the service of innovation and digital transformation.</p>
 
-    <p>Patient and teacher, I have the pleasure of managing a small team of developers within Noci.io, a company dedicated to chatbots and product advice. Rather than management based on monitoring and control, I much prefer trust and coaching in order to teach, advance and grow my employees.</p>
+    <p>Patient and educationalist, I have the pleasure of managing a small team of developers within Noci.io, a company dedicated to chatbots and product advice. Rather than management based on monitoring and control, I much prefer trust and coaching in order to teach, advance and grow my employees.</p>
 
     <h2 style="margin-top: 42px;">Contact me !</h2>
     <p>
