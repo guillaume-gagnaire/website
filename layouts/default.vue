@@ -19,7 +19,7 @@ html {
 }
 
 html, body {
-  background: #333;
+  background: #263238;
   color: #fff;
 }
 

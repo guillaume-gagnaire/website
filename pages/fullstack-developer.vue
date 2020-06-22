@@ -6,7 +6,7 @@
 
     <img src="/me.jpg" alt="" class="photo" />
     
-    <p>Self-taught developer since 2006, I had the opportunity to create several companies, to support others, either as an employee or as a consultant.</p>
+    <p>Self-taught developer since 2006, I had the opportunity to create and support several companies, either as an employee or as a consultant.</p>
 
     <p>I am committed to bringing my expertise to the service of innovation and digital transformation.</p>
 
