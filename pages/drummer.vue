@@ -31,6 +31,7 @@ export default {
       color: #fff;
       margin-bottom: 30px;
       display: inline-block;
+      font-size: 12px;
     }
 
     h2 {
