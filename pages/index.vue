@@ -1,72 +1,75 @@
 <template>
-  <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        guillaume-gagnaire-dev
-      </h1>
-      <h2 class="subtitle">
-        Guillaume-gagnaire.dev portfolio
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
+  <div class="home d-flex flex-column flex-lg-row align-items-stretch">
+    <div class="panel d-flex flex-row">
+      <nuxt-link to="/fullstack-developer" class="content d-flex flex-column text-center justify-content-center">
+        <h2>Fullstack developer</h2>
+        <p>
+          Developer since 2006, I'm currently CTO @ Noci.io.
+        </p>
+      </nuxt-link>
+      <div class="bg" style="background-image:url(/me.jpg)"></div>
+    </div>
+    <div class="panel d-flex flex-row">
+      <nuxt-link to="/drummer" class="content d-flex flex-column text-center justify-content-center">
+        <h2>Drummer</h2>
+        <p>
+          Self-taught drummer, I'm covering songs on YouTube !
+        </p>
+      </nuxt-link>
+      <div class="bg" style="background-image:url(/drums.jpg)"></div>
     </div>
   </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
 
 export default {
   components: {
-    Logo
   }
 }
 </script>
 
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
+<style lang="scss">
+  .home {
+    height: 100%;
+    height: 100vh;
+    overflow: hidden;
 
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
+    .panel {
+      width: 100%;
+      height: 100%;
+      position: relative;
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
+      .bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: transparent no-repeat center center;
+        background-size: cover;
+        z-index: 1;
+      }
 
-.links {
-  padding-top: 15px;
-}
+      .content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        z-index: 2;
+        -webkit-transition: background 400ms ease-out;
+        -moz-transition: background 400ms ease-out;
+        -ms-transition: background 400ms ease-out;
+        -o-transition: background 400ms ease-out;
+        transition: background 400ms ease-out;
+
+        &:hover {
+          background: rgba(0, 0, 0, 0.5);
+        }
+      }
+    }
+  }
 </style>
