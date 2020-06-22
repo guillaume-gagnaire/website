@@ -5,12 +5,12 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: process.env.npm_package_name || '',
+    title: 'Guillaume Gagnaire - Fullstack Developer in Bordeaux, France',
     meta: [
       { charset: 'utf-8' },
       { name: 'robots', content: 'noindex,nofollow' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { hid: 'description', name: 'description', content: 'Self-taught developer since 2006, I had the opportunity to create and support several companies, either as an employee or as a consultant.' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }

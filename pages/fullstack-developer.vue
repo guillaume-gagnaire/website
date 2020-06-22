@@ -8,7 +8,7 @@
     
     <p>Self-taught developer since 2006, I had the opportunity to create and support several companies, either as an employee or as a consultant.</p>
 
-    <p>I am committed to bringing my expertise to the service of innovation and digital transformation.</p>
+    <p>My ambition is to bring my expertise in the service of innovation and digital transformation.</p>
 
     <p>Patient and educationalist, I have the pleasure of managing a small team of developers within Noci.io, a company dedicated to chatbots and product advice. Rather than management based on monitoring and control, I much prefer trust and coaching in order to help my employees thrive.</p>
 
