@@ -9,7 +9,7 @@
       <p>
         I'm currently <strong>{{ job.title }}</strong> at
         <strong
-          ><nuxt-link :href="`/work/${job.id}`">{{
+          ><nuxt-link :href="`/work#${job.id}`">{{
             job.company
           }}</nuxt-link></strong
         >.

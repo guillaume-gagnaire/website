@@ -53,10 +53,10 @@ header {
         font-size: 18px;
         font-weight: 700;
         text-decoration: none;
-        margin: 0 10px;
+        margin: 0 16px;
 
         &:hover {
-          text-decoration: underline;
+          color: #e91e63;
         }
       }
     }
