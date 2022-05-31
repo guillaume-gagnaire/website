@@ -2,7 +2,7 @@
   <div class="work">
     <div class="jumbo">
       <p>
-        I worked for many companies, founded or not. Here's a list of my
+        I worked for many companies, as a founder or not. Here's a list of my
         remarkable experiences.
       </p>
     </div>
