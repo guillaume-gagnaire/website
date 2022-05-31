@@ -1,33 +1,65 @@
 <template>
   <div>
-    <nuxt />
+    <header>
+      <div>
+        <nuxt-link href="/">
+          <img src="@/assets/logo.png" alt="G" />
+        </nuxt-link>
+        <nav>
+          <nuxt-link href="/">Home</nuxt-link>
+          <nuxt-link href="/work">Work</nuxt-link>
+          <nuxt-link href="/contact">Contact</nuxt-link>
+        </nav>
+      </div>
+    </header>
+    <div id="main">
+      <slot />
+    </div>
   </div>
 </template>
 
-<style>
-@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap);
+<style lang="scss">
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
 
-html {
-  font-family: 'Noto Sans JP', sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
+html,
+body {
+  background: #1b242f;
+}
+
+* {
+  font-family: Poppins, sans-serif;
   box-sizing: border-box;
 }
 
-html, body {
-  background: #263238;
-  color: #fff;
-}
+header {
+  > div {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
 
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  font-family: 'Noto Sans JP', sans-serif;
-  margin: 0;
+    img {
+      height: 48px;
+      width: 48px;
+    }
+
+    nav {
+      text-align: right;
+      flex: 1;
+
+      a {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 700;
+        text-decoration: none;
+        margin: 0 10px;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
 }
 </style>

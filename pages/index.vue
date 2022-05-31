@@ -1,103 +1,98 @@
 <template>
-  <div class="home d-flex flex-column flex-lg-row align-items-stretch">
-    <div class="panel d-flex flex-row">
-      <nuxt-link to="/fullstack-developer" class="content d-flex flex-column text-center justify-content-center">
-        <h2>Fullstack developer</h2>
-        <p>
-          Developer since 2006, I'm currently <b>CTO</b> @ <b>Noci.io</b>, in <b>Bordeaux, France</b>.
-        </p>
-      </nuxt-link>
-      <div class="bg" style="background-image:url(/me.jpg)"></div>
+  <div class="home">
+    <div class="jumbo">
+      <img src="@/assets/me.jpeg" alt="" />
+      <p class="heading">
+        Hi, I'm <strong>Guillaume</strong>, I do things with
+        <strong style="color: #e91e63">code</strong>.
+      </p>
+      <p>
+        I'm currently <strong>{{ job.title }}</strong> at
+        <strong
+          ><nuxt-link :href="`/work/${job.id}`">{{
+            job.company
+          }}</nuxt-link></strong
+        >.
+      </p>
     </div>
-    <div class="panel d-flex flex-row">
-      <nuxt-link to="/drummer" class="content d-flex flex-column text-center justify-content-center">
-        <h2>Drummer</h2>
-        <p>
-          Self-taught drummer, I cover songs on YouTube !
-        </p>
-      </nuxt-link>
-      <div class="bg" style="background-image:url(/drums.jpg)"></div>
+    <div style="text-align: center">
+      <button @click="$router.push('/work')">
+        See my work
+      </button>
     </div>
   </div>
 </template>
 
 <script>
+import data from '../conf/content.json'
+
 export default {
-  components: {
+  data () {
+    return {
+      data
+    }
+  },
+  computed: {
+    job () {
+      return this.data.jobs[0]
+    }
   }
 }
 </script>
 
 <style lang="scss">
-  $homeGutter: 5px;
-  $gutterColor: #000;
+.home {
+  .jumbo {
+    max-width: 900px;
+    padding: 50px 20px;
+    margin: 0 auto;
+    color: #fff;
 
-  .home {
-    height: 100%;
-    height: 100vh;
-    overflow: hidden;
+    img {
+      display: block;
+      height: 128px;
+      width: 128px;
+      border-radius: 128px;
+      margin: 0 auto 40px auto;
+    }
 
-    .panel {
-      width: 100%;
-      height: 100%;
-      position: relative;
+    p {
+      font-size: 32px;
+      line-height: 40px;
+      margin: 0 0 30px;
 
-      &:first-child {
-        border-bottom: $homeGutter solid $gutterColor;
+      a {
+        color: inherit;
       }
 
-      &:last-child {
-        border-top: $homeGutter solid $gutterColor;
-      }
-
-      .bg {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        background: transparent no-repeat center center;
-        background-size: cover;
-        z-index: 1;
-      }
-
-      .content {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        background: rgba(0, 0, 0, 0.8);
-        color: #fff;
-        z-index: 2;
-        -webkit-transition: background 400ms ease-out;
-        -moz-transition: background 400ms ease-out;
-        -ms-transition: background 400ms ease-out;
-        -o-transition: background 400ms ease-out;
-        transition: background 400ms ease-out;
-        padding: 20px;
-
+      a,
+      strong {
         &:hover {
-          background: rgba(0, 0, 0, 0.5);
+          color: #e91e63;
+          transition: color ease-in-out 200ms;
         }
       }
     }
-  }
 
-  
-  @media (min-width: 992px) { 
-    .home {
-      .panel {
-        &:first-child {
-          border-bottom: none;
-          border-right: $homeGutter solid $gutterColor;
-        }
-
-        &:last-child {
-          border-top: none;
-          border-left: $homeGutter solid $gutterColor;
-        }
-      }
+    .heading {
+      font-size: 72px;
+      line-height: 80px;
     }
   }
+
+  button {
+    border: 2px solid #e91e63;
+    background: none;
+    padding: 15px 35px;
+    color: #e91e63;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all ease-in-out 200ms;
+
+    &:hover {
+      background: #e91e63;
+      color: #fff;
+    }
+  }
+}
 </style>

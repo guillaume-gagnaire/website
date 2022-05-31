@@ -1,0 +1,58 @@
+{
+  "jobs": [
+    {
+      "id": "smart-moov",
+      "title": "CTO",
+      "company": "Smart Moov",
+      "from": "2021-11-02",
+      "to": null,
+      "link": "https://www.smart-moov.fr",
+      "description": ""
+    },
+    {
+      "id": "noci",
+      "title": "CTO",
+      "company": "Noci.io",
+      "from": "2019-01-28",
+      "to": "2021-10-31",
+      "link": "https://www.noci.io",
+      "description": ""
+    },
+    {
+      "id": "naxxt",
+      "title": "Fullstack lead developer",
+      "company": "Naxxt",
+      "from": "2016-07-01",
+      "to": "2018-07-01",
+      "link": "http://web.archive.org/web/20161008060915/http://naxxt.com/",
+      "description": ""
+    },
+    {
+      "id": "supdepub",
+      "title": "PHP teacher",
+      "company": "Sup de Pub Bordeaux",
+      "from": "2015-09-01",
+      "to": "2017-07-01",
+      "link": "https://www.supdepub.com/",
+      "description": ""
+    },
+    {
+      "id": "caramaps",
+      "title": "Fullstack lead developer",
+      "company": "Caramaps",
+      "from": "2013-11-01",
+      "to": "2016-07-01",
+      "link": "https://www.caramaps.com/",
+      "description": ""
+    },
+    {
+      "id": "urdoor",
+      "title": "CTO / Founder",
+      "company": "UrDoor",
+      "from": "2013-01-01",
+      "to": "2013-11-01",
+      "link": "http://web.archive.org/web/20130604224443/http://www.urdoor.com/",
+      "description": ""
+    }
+  ]
+}
