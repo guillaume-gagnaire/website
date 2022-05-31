@@ -22,7 +22,7 @@
         </div>
         <div class="description">
           <div v-html="job.description"></div>
-          <a class="button" :href="job.link" v-if="job.link">
+          <a class="button" target="_blank" :href="job.link" v-if="job.link">
             See website
           </a>
         </div>
