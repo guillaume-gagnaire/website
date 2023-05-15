@@ -6,8 +6,8 @@
         me ? Ask me anything ? You can <strong>get in touch</strong> with me :
       </p>
       <p style="text-align: center">
-        <a href="mailto:contact@guillaume-gagnaire.dev">
-          contact@guillaume-gagnaire.dev
+        <a href="mailto:guillaume@gagnaire.dev">
+          guillaume@gagnaire.dev
         </a>
         <br />
         or
