@@ -1,11 +1,20 @@
 {
   "jobs": [
     {
+      "id": "gagnaire.dev",
+      "title": "Freelance CTO",
+      "company": "Guillaume Gagnaire",
+      "from": "2021-05-17",
+      "to": null,
+      "link": "https://gagnaire.dev",
+      "description": "You have a project in mind, and no idea on how to do it ? <strong>Hire me !</strong>"
+    },
+    {
       "id": "smart-moov",
       "title": "CTO",
       "company": "Smart Moov",
       "from": "2021-11-02",
-      "to": "2023-04-30",
+      "to": "2023-05-16",
       "link": "https://www.smart-moov.fr",
       "description": "<strong>Smart Moov</strong> is a digital temporary employment agency, bringing innovation to the service of temporary workers and client companies."
     },
