@@ -4,7 +4,7 @@ import { defineNuxtConfig } from 'nuxt'
 export default defineNuxtConfig({
   ssr: false,
   meta: {
-    title: 'Guillaume Gagnaire - CTO @ Smart Moov',
+    title: 'Guillaume Gagnaire - Freelance CTO',
     link: [
       {
         rel: 'apple-touch-icon',
