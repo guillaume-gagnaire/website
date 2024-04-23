@@ -1,0 +1,25 @@
+title: Contact
+description: Le meilleur moyen de propulser vos projets est de me contacter !
+navigation.icon: i-heroicons-envelope
+hero:
+  title: Envie qu'on travaille ensemble ?
+  description: Ça se passe en dessous !
+  links:
+    - label: Par téléphone
+      size: xl
+      color: primary
+      icon: i-heroicons-phone-20-solid
+      trailing: false
+      to: tel:+33652351822
+    - label: Par email
+      size: xl
+      color: primary
+      icon: i-heroicons-video-camera-20-solid
+      trailing: false
+      to: mailto:guillaume@gagnaire.dev
+    - label: En visio
+      size: xl
+      color: primary
+      icon: i-heroicons-phone-20-solid
+      trailing: false
+      to: https://calendly.com/guillaume-gagnaire/faisons-connaissance

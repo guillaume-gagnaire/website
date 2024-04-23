@@ -1,6 +1,6 @@
 <script setup lang="ts">
-const { data: page } = await useAsyncData('contact', () =>
-  queryContent('/contact').findOne()
+const { data: page } = await useAsyncData('projects', () =>
+  queryContent('/projects').findOne()
 )
 if (!page.value) {
   throw createError({
@@ -9,6 +9,10 @@ if (!page.value) {
     fatal: true
   })
 }
+
+const { data: projects } = await useAsyncData('projectList', () =>
+  queryContent<BlogPost>('/projects').where({ _extension: 'md' }).find()
+)
 
 useSeoMeta({
   title: page.value.title,
@@ -31,7 +35,7 @@ defineOgImage({
       :description="page.hero.description"
       :links="page.hero.links"
     ></ULandingHero>
-    {{ projects }}
+
     <!-- 
     <UContainer>
       <UPricingGrid>

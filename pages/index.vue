@@ -1,98 +1,142 @@
+<script setup lang="ts">
+const { data: page } = await useAsyncData('index', () =>
+  queryContent('/').findOne()
+)
+if (!page.value) {
+  throw createError({
+    statusCode: 404,
+    statusMessage: 'Page not found',
+    fatal: true
+  })
+}
+
+useSeoMeta({
+  titleTemplate: '',
+  title: page.value.title,
+  ogTitle: page.value.title,
+  description: page.value.description,
+  ogDescription: page.value.description
+})
+</script>
+
 <template>
-  <div class="home">
-    <div class="jumbo">
-      <img src="@/assets/me.jpeg" alt="" />
-      <p class="heading">
-        Hi, I'm <strong>Guillaume</strong>, I do things with
-        <strong style="color: #e91e63">code</strong>.
-      </p>
-      <p>
-        I'm currently <strong>{{ job.title }}</strong> at
-        <strong
-          ><nuxt-link :href="`/work#${job.id}`">{{
-            job.company
-          }}</nuxt-link></strong
-        >.
-      </p>
-    </div>
-    <div style="text-align: center">
-      <button @click="$router.push('/work')">
-        See my work
-      </button>
-    </div>
+  <div v-if="page">
+    <ULandingHero
+      :title="page.hero.title"
+      :description="page.hero.description"
+      :links="page.hero.links"
+    >
+      <div
+        class="absolute inset-0 landing-grid z-[-1] [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
+      />
+
+      <template #headline>
+        <UBadge
+          v-for="(link, idx) in page.hero.headline"
+          :key="idx"
+          variant="subtle"
+          size="lg"
+          class="relative rounded-full font-semibold mx-2"
+        >
+          <NuxtLink
+            :to="link.to"
+            target="_blank"
+            class="focus:outline-none"
+            tabindex="-1"
+          >
+            <span class="absolute inset-0" aria-hidden="true" />
+          </NuxtLink>
+
+          {{ link.label }}
+
+          <UIcon
+            v-if="link.icon"
+            :name="link.icon"
+            class="ml-1 w-4 h-4 pointer-events-none"
+          />
+        </UBadge>
+      </template>
+    </ULandingHero>
+
+    <ULandingSection class="!pt-0">
+      <Avatar />
+    </ULandingSection>
+
+    <ULandingSection
+      v-for="(section, index) in page.sections"
+      :key="index"
+      :title="section.title"
+      :description="section.description"
+      :align="section.align"
+      :features="section.features"
+    >
+      <Placeholder />
+    </ULandingSection>
+
+    <ULandingSection
+      :title="page.features.title"
+      :description="page.features.description"
+    >
+      <UPageGrid>
+        <ULandingCard
+          v-for="(item, index) in page.features.items"
+          :key="index"
+          v-bind="item"
+        />
+      </UPageGrid>
+    </ULandingSection>
+
+    <ULandingSection
+      :headline="page.testimonials.headline"
+      :title="page.testimonials.title"
+      :description="page.testimonials.description"
+    >
+      <UPageColumns class="xl:columns-4">
+        <div
+          v-for="(testimonial, index) in page.testimonials.items"
+          :key="index"
+          class="break-inside-avoid"
+        >
+          <ULandingTestimonial
+            v-bind="testimonial"
+            class="bg-gg-300/50 dark:bg-gg-600/50"
+          />
+        </div>
+      </UPageColumns>
+    </ULandingSection>
+
+    <ULandingSection>
+      <ULandingCTA v-bind="page.cta" class="bg-gg-300/50 dark:bg-gg-600/50" />
+    </ULandingSection>
   </div>
 </template>
 
-<script>
-import data from '../conf/content.json'
-
-export default {
-  data () {
-    return {
-      data
-    }
-  },
-  computed: {
-    job () {
-      return this.data.jobs[0]
-    }
-  }
+<style scoped>
+.landing-grid {
+  background-size: 42px 42px;
+  background-image: linear-gradient(
+      to right,
+      rgb(var(--color-primary-200)) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      to bottom,
+      rgb(var(--color-primary-200)) 1px,
+      transparent 1px
+    );
 }
-</script>
-
-<style lang="scss">
-.home {
-  .jumbo {
-    max-width: 900px;
-    padding: 50px 20px;
-    margin: 0 auto;
-    color: #fff;
-
-    img {
-      display: block;
-      height: 128px;
-      width: 128px;
-      border-radius: 128px;
-      margin: 0 auto 40px auto;
-    }
-
-    p {
-      font-size: 32px;
-      line-height: 40px;
-      margin: 0 0 30px;
-
-      a {
-        color: inherit;
-      }
-
-      a,
-      strong {
-        &:hover {
-          color: #e91e63;
-          transition: color ease-in-out 200ms;
-        }
-      }
-    }
-
-    .heading {
-      font-size: 72px;
-      line-height: 80px;
-    }
-  }
-
-  button {
-    border: 2px solid #e91e63;
-    background: none;
-    padding: 15px 35px;
-    color: #e91e63;
-    cursor: pointer;
-    font-size: 18px;
-    transition: all ease-in-out 200ms;
-
-    &:hover {
-      background: #e91e63;
-      color: #fff;
-    }
+.dark {
+  .landing-grid {
+    background-image: linear-gradient(
+        to right,
+        rgb(var(--color-primary-800)) 1px,
+        transparent 1px
+      ),
+      linear-gradient(
+        to bottom,
+        rgb(var(--color-primary-800)) 1px,
+        transparent 1px
+      );
   }
 }
 </style>
