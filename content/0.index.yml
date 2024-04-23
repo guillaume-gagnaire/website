@@ -135,10 +135,10 @@ testimonials:
           src: https://i.pravatar.cc/120?img=9
           loading: lazy
 cta:
-  title: Get started today
+  title: Envie qu'on bosse ensemble ?
   description: Nisi mollit id aliquip sunt est laborum sit sit.
   links:
-    - label: Buy now
+    - label: Hire me !
       size: xl
       color: black
-      to: /pricing
+      to: /contact
