@@ -106,7 +106,10 @@ useSeoMeta({
     </ULandingSection> -->
 
     <ULandingSection>
-      <ULandingCTA v-bind="page.cta" class="bg-gg-300/50 dark:bg-gg-600/50" />
+      <ULandingCTA
+        v-bind="page.cta"
+        class="bg-primary-500/90 dark:bg-primary-500/80"
+      />
     </ULandingSection>
   </div>
 </template>

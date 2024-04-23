@@ -1,16 +1,15 @@
-<script setup lang="ts">
+<script setup>
 import { withoutTrailingSlash, joinURL } from 'ufo'
-import type { BlogPost } from '~/types'
 
 const route = useRoute()
 
 const { data: post } = await useAsyncData(route.path, () =>
-  queryContent<BlogPost>(route.path).findOne()
+  queryContent(route.path).findOne()
 )
 if (!post.value) {
   throw createError({
     statusCode: 404,
-    statusMessage: 'Post not found',
+    statusMessage: 'Projet non trouvé',
     fatal: true
   })
 }

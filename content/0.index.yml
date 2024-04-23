@@ -135,8 +135,8 @@ testimonials:
           src: https://i.pravatar.cc/120?img=9
           loading: lazy
 cta:
-  title: Envie qu'on bosse ensemble ?
-  description: Nisi mollit id aliquip sunt est laborum sit sit.
+  title: Envie de bosser ensemble ?
+  description: Faisons connaissance en visio, par téléphone ou par email.
   links:
     - label: Hire me !
       size: xl
