@@ -19,6 +19,7 @@ jobs:
       - run: npx nuxt build --preset github_pages
         env:
           NUXT_UI_PRO_LICENSE: ${{ secrets.NUXT_UI_PRO_LICENSE }}
+          NUXT_PUBLIC_STUDIO_TOKENS: ${{ secrets.NUXT_PUBLIC_STUDIO_TOKENS }}
           NUXT_PUBLIC_SITE_URL: https://gagnaire.dev
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
