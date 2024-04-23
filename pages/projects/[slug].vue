@@ -57,15 +57,7 @@ if (post.value.image?.src) {
   <UContainer v-if="post">
     <UPageHeader :title="post.title" :description="post.description">
       <template #headline>
-        <UBadge v-bind="post.badge" variant="subtle" />
-        <span class="text-gray-500 dark:text-gray-400">&middot;</span>
-        <time class="text-gray-500 dark:text-gray-400">{{
-          new Date(post.date).toLocaleDateString('en', {
-            year: 'numeric',
-            month: 'short',
-            day: 'numeric'
-          })
-        }}</time>
+        <UBadge v-bind="{ label: post.type }" variant="subtle" />
       </template>
 
       <div class="flex flex-wrap items-center gap-3 mt-4">

@@ -8,10 +8,10 @@ const links = [
     label: 'Projets',
     to: '/projects'
   },
-  {
-    label: 'Blog',
-    to: '/blog'
-  },
+  // {
+  //   label: 'Blog',
+  //   to: '/blog'
+  // },
   {
     label: 'Contact',
     to: '/contact'
