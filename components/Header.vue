@@ -22,7 +22,8 @@ const links = [
 <template>
   <UHeader :links="links">
     <template #logo>
-      <img src="/logo.svg" alt="Guillaume Gagnaire" style="height: 42px" />
+      <img src="/logo.svg" alt="Guillaume Gagnaire" class="logo" />
+      <img src="/favicon-32x32.png" alt="GG" class="logo-sm" />
     </template>
 
     <template #right>
@@ -34,3 +35,23 @@ const links = [
     </template>
   </UHeader>
 </template>
+
+<style scoped>
+.logo {
+  height: 42px;
+}
+
+.logo-sm {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .logo {
+    display: none;
+  }
+
+  .logo-sm {
+    display: block;
+  }
+}
+</style>
