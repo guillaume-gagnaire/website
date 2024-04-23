@@ -62,7 +62,7 @@ useSeoMeta({
       <Avatar />
     </ULandingSection>
 
-    <ULandingSection
+    <!-- <ULandingSection
       v-for="(section, index) in page.sections"
       :key="index"
       :title="section.title"
@@ -103,7 +103,7 @@ useSeoMeta({
           />
         </div>
       </UPageColumns>
-    </ULandingSection>
+    </ULandingSection> -->
 
     <ULandingSection>
       <ULandingCTA v-bind="page.cta" class="bg-gg-300/50 dark:bg-gg-600/50" />
