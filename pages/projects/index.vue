@@ -81,7 +81,7 @@ function getDescription (item) {
           size="lg"
           :variant="selectedTag === null ? 'solid' : 'outline'"
           @click="selectedTag = null"
-          class="mr-4"
+          class="mr-4 cursor-pointer"
           >Toutes les technologies</UBadge
         >
         <UBadge
@@ -90,7 +90,7 @@ function getDescription (item) {
           :key="tag"
           :variant="selectedTag === tag ? 'solid' : 'outline'"
           @click="selectedTag = tag"
-          class="mr-4"
+          class="mr-4 cursor-pointer"
           >{{ tag }}</UBadge
         >
         <div class="flex items-start justify-start mt-4 gap-4">
