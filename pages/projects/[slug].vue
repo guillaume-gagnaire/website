@@ -50,6 +50,10 @@ if (post.value.image?.src) {
     headline: 'Projets'
   })
 }
+
+const modalOpened = ref(false)
+const modalUrl = ref('')
+const modalText = ref('')
 </script>
 
 <template>
@@ -74,9 +78,50 @@ if (post.value.image?.src) {
         </UButton>
       </div>
     </UPageHeader>
-
+    <UModal
+      v-model="modalOpened"
+      :ui="{
+        height: 'h-[90vh] md:h-[80vh]',
+        width: 'sm:max-w-full w-full m-6 lg:w-[1000px]'
+      }"
+    >
+      <div class="p-4 flex flex-col h-full">
+        <div
+          :style="{
+            background: `#fff url(${modalUrl}) no-repeat center center`,
+            backgroundSize: 'contain'
+          }"
+          class="grow"
+        ></div>
+        <UAlert :title="modalText" class="mt-4 shrink-0" />
+      </div>
+    </UModal>
     <UPage>
       <UPageBody prose>
+        <div v-if="post && post.images" style="height: 400px">
+          <UCarousel
+            v-slot="{ item }"
+            :items="post.images"
+            class="h-full rounded-lg overflow-hidden"
+            :ui="{ item: 'basis-full' }"
+            arrows
+            indicators
+          >
+            <div
+              class="h-[400px] w-full cursor-pointer"
+              :style="{
+                background: `#fff url(${item.src}) no-repeat center center`,
+                backgroundSize: 'contain'
+              }"
+              draggable="false"
+              @click="
+                ;(modalUrl = item.src),
+                  (modalText = item.title),
+                  (modalOpened = true)
+              "
+            ></div>
+          </UCarousel>
+        </div>
         <ContentRenderer v-if="post && post.body" :value="post" />
 
         <hr v-if="surround?.length" />
@@ -87,6 +132,7 @@ if (post.value.image?.src) {
       <template #right>
         <UContentToc
           v-if="post.body && post.body.toc"
+          title="Table des matières"
           :links="post.body.toc.links"
         />
       </template>
