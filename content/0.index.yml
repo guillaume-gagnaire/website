@@ -66,73 +66,66 @@ sections:
         size: md
         class: ml-8
 features:
-  title: Why choose our service?
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  title: Mes compétences
+  description: Et j'adore en apprendre plus!
   items:
-    - title: Easy to use
-      description: Id laborum laboris duis nostrud excepteur ut velit nulla magna Lorem proident non.
-      icon: i-heroicons-cog
-    - title: Reliable
-      description: Magna Lorem ex cillum fugiat ad enim aute irure sit duis minim.
-      icon: i-heroicons-check
-    - title: Secure
-      description: Proident nostrud excepteur sint ut culpa consectetur aute adipisicing non anim ullamco.
-      icon: i-heroicons-lock-closed
-    - title: Fast
-      description: Qui reprehenderit nostrud dolore nisi ad fugiat labore eiusmod sint aliquip nisi voluptate.
-      icon: i-heroicons-rocket-launch
-    - title: Affordable
-      description: Reprehenderit fugiat elit in do ipsum ut pariatur.
-      icon: i-heroicons-currency-dollar
-    - title: Scalable
-      description: Lorem deserunt et eiusmod. Ea in consectetur minim officia ullamco enim deserunt est.
-      icon: i-heroicons-chart-bar
+    - title: Développement fullstack JS
+      description: Typescript, NodeJS, VueJS, MongoDB, MySQL ...
+      icon: i-simple-icons-visualstudiocode
+    - title: DevOps
+      description: Github Actions, Kubernetes ❤️
+      icon: i-simple-icons-codeship
+    - title: Transfert de compétences
+      description: J'adore enseigner et transmettre mon expérience 👨‍🏫
+      icon: i-heroicons-academic-cap
+    - title: Généraliste
+      description: Quelque soit le domaine d'activité, j'aime innover !
+      icon: i-heroicons-arrows-pointing-out
+    - title: Care
+      description: J'aime prendre soin des gens avec qui je travaille 🤗
+      icon: i-heroicons-heart
+    - title: Vision business
+      description: Le beau code ne sert à rien s'il n'est pas au service du business
+      icon: i-heroicons-building-office
 testimonials:
-  headline: Testimonials
-  title: What our customers are saying.
-  description: Proident sunt exercitation minim laborum enim laboris labore esse.
+  headline: Témoignages
+  title: J'ai travaillé avec eux.
+  description: Et apparemment, ils sont contents 😊
   items:
-    - quote: Nostrud tempor sunt fugiat. Dolor in sint dolore labore non occaecat adipisicing Lorem labore ullamco enim excepteur. In fugiat Lorem sit velit id veniam esse eiusmod non ea voluptate cupidatat reprehenderit ullamco dolore. Mollit laborum occaecat aliquip.
+    - quote: Guillaume a occupé de manière très investi le rôle de lead dev sur le projet de développement de la data plateforme. C'est un passionné très compétent et soucieux du moindre détail qui fera de votre projet une réussite. Exigence, rigueur et performance sont les qualificatifs qui le caractérisent le mieux. Je recommande son savoir faire sans hésiter.
       author:
-        name: Rose Roberson
-        description: CEO at Company
+        name: Jérome TOSCANO
+        description: Head of Data @ Pichet
         avatar:
-          src: https://i.pravatar.cc/120?img=1
+          src: https://media.licdn.com/dms/image/D4E03AQGJi6rBLlPZHA/profile-displayphoto-shrink_800_800/0/1689745690035?e=1719446400&v=beta&t=N4Ri7QLemVaEhWHZtT_G_SE7UMt2htoWdvDsVyLLK6Q
           loading: lazy
-    - quote: Eiusmod dolor aute ut nulla pariatur officia consequat aute amet exercitation.
+    - quote: J'ai eu le plaisir de travailler avec Guillaume pendant presque 2 ans, d'abord en tant que prestataire puis en CDI au sein de Smart Moov. Guillaume possède un gros bagage technique qui lui permet de toujours trouver des solutions. Il a la capacité de mener des projets complexes de A à Z dans des environnements métiers qu'il découvre. J'ai particulièrement apprécié sa vision terrain et business !
       author:
-        name: Chace Rodgers
-        description: CEO at Company
+        name: Léo AL HAMRA
+        description: CEO @ Teamtailor
         avatar:
-          src: https://i.pravatar.cc/120?img=7
+          src: https://media.licdn.com/dms/image/D4E03AQHp_xs-e8BilA/profile-displayphoto-shrink_800_800/0/1684164363087?e=1719446400&v=beta&t=bmGOqHgcIjrKN4cUwYgGp4XKb_QtJvYIkXGsDkH-pGk
           loading: lazy
-    - quote: Id duis velit enim officia ad nisi incididunt magna ex dolor minim deserunt dolor. Esse incididunt cillum nostrud esse do quis amet labore amet nulla eiusmod amet nulla Lorem. Incididunt ex voluptate irure officia laboris ea proident est qui.
+    - quote: En introduction, Guillaume est tout simplement un CTO exceptionnel et leader technologique. J'ai eu le plaisir de travailler avec lui pendant 2 ans au lancement de Zola, où il a démontré une expertise technique remarquable et une capacité impressionnante à diriger des équipes vers l'atteinte de résultats exceptionnels. Guillaume est un véritable visionnaire technologique. Sa compréhension approfondie des tendances de l'industrie et sa capacité à anticiper les évolutions technologiques lui permettent de prendre des décisions stratégiques éclairées. Il a dirigé la mise en œuvre de solutions innovantes qui ont considérablement amélioré l'efficacité de notre infrastructure technologique. Guillaume excelle également dans la résolution de problèmes techniques complexes et son aptitude à transformer des défis en opportunités a permis à notre entreprise surmonter des obstacles critiques et d'atteindre des résultats exceptionnels, même dans des situations difficiles. En somme, je le recommanderai à toute entreprise à la recherche d'un leader technologique dynamique et compétent. Sa passion pour l'innovation, sa vision stratégique et sa capacité à obtenir des résultats en font un choix idéal pour des projets ambitieux.
       author:
-        name: Cornelius Sheppard
-        description: CEO at Company
+        name: Yanis EL ASLI
+        description: Operation Manager @ Zola
         avatar:
-          src: https://i.pravatar.cc/120?img=3
+          src: https://media.licdn.com/dms/image/D4E03AQGHLKzLyCq-FA/profile-displayphoto-shrink_800_800/0/1684744751884?e=1719446400&v=beta&t=L-Zyq3V6P7zbe0L4vqZ7EX0VWnTfwgfvfojUcXAa-VE
           loading: lazy
-    - quote: Velit consectetur in adipisicing culpa eiusmod commodo eu ex dolore. Officia irure nisi dolor dolore velit fugiat. Aliqua sint aliqua aute elit eu sunt.
+    - quote: Guillaume c'est le talent technique dont vous avez besoin. Niveau dev, il excelle. Humainement, c'est le top. Et à cela, il ajoute une vraie connaissance sur les sujets transverses à la tech (design, marketing, ...). Ce n'est pas pour rien que nous continuons à faire appel à lui en tant que Freelance après 3 ans de salariat Noci
       author:
-        name: Destinee Woods
-        description: CEO at Company
+        name: Jonathan PIBOTEAU
+        description: Head of Marketing @ Noci.io
         avatar:
-          src: https://i.pravatar.cc/120?img=5
+          src: https://media.licdn.com/dms/image/C5603AQFGLy-Jpa8-3w/profile-displayphoto-shrink_800_800/0/1609774064337?e=1719446400&v=beta&t=muPt1POLVDagu7lMvQSGbGbdzZ-C_LkxAcqecL1U_Jg
           loading: lazy
-    - quote: Proident quis deserunt qui ex exercitation veniam id Lorem est cupidatat ipsum irure aliquip ad.
+    - quote: J'ai eu la chance d'avoir Guillaume en tant que CTO et cette expérience a marqué ma carrière. Très pédagogue et disposant d'un savoir impressionant, Guillaume n'hésite pas à s'impliquer à chaque stade d'un projet, ainsi qu'auprès des développeurs. Ses capacités d'écoute, de compréhension et d'analyse ainsi que sa façon de penser "outside the box" font de lui le leader parfait. Passionné par son métier et d'un professionnalisme exemplaire, il excelle dans la création de projets et travailler avec lui est un réel plaisir. Il est, encore à l'heure actuelle, source d'inspiration dans ma vie professionnelle.
       author:
-        name: Kaleb Mccormick
-        description: CEO at Company
+        name: Alison VANDROMME
+        description: CTO @ WeLOOP
         avatar:
-          src: https://i.pravatar.cc/120?img=8
-          loading: lazy
-    - quote: Magna officia quis ea ea in officia non voluptate ipsum culpa do labore sunt. Aute est dolore commodo sint officia ad laboris dolor magna aliquip exercitation tempor commodo.
-      author:
-        name: Jazmin Mccall
-        description: CEO at Company
-        avatar:
-          src: https://i.pravatar.cc/120?img=9
+          src: https://media.licdn.com/dms/image/C4E03AQHwOAt438OuHA/profile-displayphoto-shrink_800_800/0/1649052916046?e=1719446400&v=beta&t=j9jkZak1ERLulcd_7uCmsYngmfyksxCxTm2ngkl5kZM
           loading: lazy
 cta:
   title: Envie de bosser ensemble ?
