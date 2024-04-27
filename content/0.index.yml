@@ -92,6 +92,13 @@ testimonials:
   title: J'ai travaillé avec eux.
   description: Et apparemment, ils sont contents 😊
   items:
+    - quote: Cela fait maintenant plus de 6 ans que nous travaillons avec Guillaume, en tant que CTO interne puis externalisé par la suite. Arrivé initialement comme lead dev, il est rapidement devenu notre CTO en nous démontrant toutes ses qualités de tech mais aussi et surtout sa vision transverse, des compétences dans les domaines complémentaires de vision stratégique et des savoirs être qui nous sont chers chez NOCI.io tels que la transparence, l’humanité, et l’adaptabilité. Malgré mes demandes toujours plus poussées Guillaume sait à la fois me canaliser et recentrer/prioriser les évolutions de notre produit afin de le rendre parfaitement adapté aux évolutions technologiques et d’usage.
+      author:
+        name: Guilhaume FEREGOTTO
+        description: CEO @ Noci.io
+        avatar:
+          src: https://media.licdn.com/dms/image/C4E03AQFs4SVpL18ieA/profile-displayphoto-shrink_800_800/0/1609749143022?e=1719446400&v=beta&t=U7dULDSSy_elbkAMiTlDa2Nq-QzX9BR6hltF6u-xYag
+          loading: lazy
     - quote: Guillaume a occupé de manière très investi le rôle de lead dev sur le projet de développement de la data plateforme. C'est un passionné très compétent et soucieux du moindre détail qui fera de votre projet une réussite. Exigence, rigueur et performance sont les qualificatifs qui le caractérisent le mieux. Je recommande son savoir faire sans hésiter.
       author:
         name: Jérome TOSCANO
