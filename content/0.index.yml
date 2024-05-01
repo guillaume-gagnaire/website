@@ -75,12 +75,12 @@ features:
     - title: DevOps
       description: Github Actions, Kubernetes ❤️
       icon: i-simple-icons-codeship
+    - title: IA générative
+      description: J'intègre de l'IA dans les produits pour optimiser les process, et augmenter la productivité
+      icon: i-material-symbols-light-robot-2-outline
     - title: Transfert de compétences
       description: J'adore enseigner et transmettre mon expérience 👨‍🏫
       icon: i-heroicons-academic-cap
-    - title: Généraliste
-      description: Quelque soit le domaine d'activité, j'aime innover !
-      icon: i-heroicons-arrows-pointing-out
     - title: Care
       description: J'aime prendre soin des gens avec qui je travaille 🤗
       icon: i-heroicons-heart
