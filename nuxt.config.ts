@@ -16,6 +16,11 @@ export default defineNuxtConfig({
     openaiApiKey: process.env.NUXT_OPENAI_API_KEY || '',
     openaiModel: process.env.NUXT_OPENAI_MODEL || 'gpt-4o-mini'
   },
+  nitro: {
+    externals: {
+      external: ['pdfkit', 'fontkit']
+    }
+  },
   hooks: {
     // Define `@nuxt/ui` components as global to use them in `.md` (feel free to add those you need)
     'components:extend': components => {

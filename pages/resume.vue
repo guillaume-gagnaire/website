@@ -13,6 +13,7 @@ const company = ref('')
 const jobDescription = ref('')
 
 const loading = ref(false)
+const downloading = ref(false)
 const errorMessage = ref('')
 const resume = ref<any>(null)
 const target = ref<{ jobTitle: string, company: string } | null>(null)
@@ -62,6 +63,32 @@ function reset () {
 
 function printPage () {
   if (typeof window !== 'undefined') window.print()
+}
+
+async function downloadPdf () {
+  if (!resume.value) return
+  downloading.value = true
+  errorMessage.value = ''
+  try {
+    const blob = await $fetch<Blob>('/api/resume/pdf', {
+      method: 'POST',
+      body: { password: password.value, resume: resume.value },
+      responseType: 'blob'
+    })
+    const url = URL.createObjectURL(blob)
+    const a = document.createElement('a')
+    a.href = url
+    const name = [target.value?.company, target.value?.jobTitle].filter(Boolean).join('-').replace(/[^a-z0-9-]+/gi, '_').toLowerCase()
+    a.download = name ? `cv-guillaume-gagnaire-${name}.pdf` : 'cv-guillaume-gagnaire.pdf'
+    document.body.appendChild(a)
+    a.click()
+    document.body.removeChild(a)
+    URL.revokeObjectURL(url)
+  } catch (err: any) {
+    errorMessage.value = err?.statusMessage || err?.data?.statusMessage || 'Erreur lors du téléchargement'
+  } finally {
+    downloading.value = false
+  }
 }
 </script>
 
@@ -120,9 +147,20 @@ function printPage () {
           <UButton color="gray" variant="soft" icon="i-heroicons-arrow-left" @click="reset">
             Nouvelle génération
           </UButton>
-          <UButton icon="i-heroicons-printer" @click="printPage">
-            Imprimer / PDF
+          <UButton icon="i-heroicons-arrow-down-tray" :loading="downloading" @click="downloadPdf">
+            Télécharger le PDF
           </UButton>
+          <UButton color="gray" variant="ghost" icon="i-heroicons-printer" @click="printPage">
+            Imprimer (navigateur)
+          </UButton>
+          <UAlert
+            v-if="errorMessage"
+            class="basis-full"
+            icon="i-heroicons-exclamation-triangle"
+            color="red"
+            variant="subtle"
+            :title="errorMessage"
+          />
           <p v-if="target?.jobTitle || target?.company" class="text-sm text-gray-500 ml-auto">
             Cible : {{ [target?.jobTitle, target?.company].filter(Boolean).join(' @ ') }}
           </p>
