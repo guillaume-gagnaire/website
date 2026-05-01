@@ -10,8 +10,39 @@ const LIGHT = '#D1D5DB'
 
 const SIDEBAR_W = 200
 
+const FONT_REGULAR = 'DMSans'
+const FONT_BOLD = 'DMSans-Bold'
+
+let fontRegular: Buffer | null = null
+let fontBold: Buffer | null = null
+
+async function loadFonts () {
+  if (fontRegular && fontBold) return
+  try {
+    const storage = useStorage('assets:server')
+    const r = await storage.getItemRaw('fonts/DMSans-Regular.ttf')
+    const b = await storage.getItemRaw('fonts/DMSans-Bold.ttf')
+    if (r && b) {
+      fontRegular = Buffer.isBuffer(r) ? r : Buffer.from(r as ArrayBuffer)
+      fontBold = Buffer.isBuffer(b) ? b : Buffer.from(b as ArrayBuffer)
+      return
+    }
+  } catch { /* fallback below */ }
+  // Dev fallback: read from disk
+  fontRegular = await readFile(resolve(process.cwd(), 'server/assets/fonts/DMSans-Regular.ttf'))
+  fontBold = await readFile(resolve(process.cwd(), 'server/assets/fonts/DMSans-Bold.ttf'))
+}
+
 export async function buildResumePdf (resume: Resume): Promise<Buffer> {
+  await loadFonts()
+
   const doc = new PDFDocument({ size: 'A4', margin: 0, bufferPages: true })
+  if (fontRegular) doc.registerFont(FONT_REGULAR, fontRegular)
+  if (fontBold) doc.registerFont(FONT_BOLD, fontBold)
+
+  const FREG = fontRegular ? FONT_REGULAR : 'Helvetica'
+  const FBOLD = fontBold ? FONT_BOLD : 'Helvetica-Bold'
+
   const chunks: Buffer[] = []
   doc.on('data', (c) => chunks.push(c as Buffer))
   const done = new Promise<Buffer>((res, rej) => {
@@ -55,17 +86,17 @@ export async function buildResumePdf (resume: Resume): Promise<Buffer> {
   const SW = SIDEBAR_W - 36
 
   const sTitle = (text: string) => {
-    doc.fillColor('white').font('Helvetica-Bold').fontSize(12).text(text, SX, sy, { width: SW })
+    doc.fillColor('white').font(FBOLD).fontSize(12).text(text, SX, sy, { width: SW })
     sy = doc.y + 4
   }
   const sLine = (text: string) => {
-    doc.fillColor('white').font('Helvetica').fontSize(8.5).text(text, SX, sy, { width: SW })
+    doc.fillColor('white').font(FREG).fontSize(8.5).text(text, SX, sy, { width: SW })
     sy = doc.y + 1
   }
   const sBullet = (text: string) => {
     const startY = sy
     doc.circle(SX + 2, startY + 4, 1.5).fill('white')
-    doc.fillColor('white').font('Helvetica').fontSize(8.5).text(text, SX + 9, startY, { width: SW - 9 })
+    doc.fillColor('white').font(FREG).fontSize(8.5).text(text, SX + 9, startY, { width: SW - 9 })
     sy = doc.y + 1
   }
 
@@ -110,24 +141,24 @@ export async function buildResumePdf (resume: Resume): Promise<Buffer> {
   const RW = PAGE_W - RX - 28
   let ry = 50
 
-  doc.fillColor(ORANGE).font('Helvetica').fontSize(30).text(resume.personal.firstName, RX, ry, { width: RW })
+  doc.fillColor(ORANGE).font(FREG).fontSize(30).text(resume.personal.firstName, RX, ry, { width: RW })
   ry = doc.y - 4
-  doc.fillColor(ORANGE).font('Helvetica-Bold').fontSize(30).text(resume.personal.lastName.toUpperCase(), RX, ry, { width: RW })
+  doc.fillColor(ORANGE).font(FBOLD).fontSize(30).text(resume.personal.lastName.toUpperCase(), RX, ry, { width: RW })
   ry = doc.y + 4
 
-  doc.fillColor(MUTED).font('Helvetica').fontSize(11).text(resume.personal.title, RX, ry, { width: RW })
+  doc.fillColor(MUTED).font(FREG).fontSize(11).text(resume.personal.title, RX, ry, { width: RW })
   ry = doc.y + 14
 
-  doc.fillColor(ORANGE).font('Helvetica-Bold').fontSize(14).text('Profil', RX, ry, { width: RW })
+  doc.fillColor(ORANGE).font(FBOLD).fontSize(14).text('Profil', RX, ry, { width: RW })
   ry = doc.y + 5
-  doc.fillColor(TEXT).font('Helvetica').fontSize(9.5)
+  doc.fillColor(TEXT).font(FREG).fontSize(9.5)
   for (const para of resume.profile.split(/\n\n+/)) {
     doc.text(para, RX, ry, { width: RW, align: 'justify' })
     ry = doc.y + 5
   }
   ry += 4
 
-  doc.fillColor(ORANGE).font('Helvetica-Bold').fontSize(14).text('Expériences notables', RX, ry, { width: RW })
+  doc.fillColor(ORANGE).font(FBOLD).fontSize(14).text('Expériences notables', RX, ry, { width: RW })
   ry = doc.y + 8
 
   const lineX = RX + 5
@@ -144,18 +175,18 @@ export async function buildResumePdf (resume: Resume): Promise<Buffer> {
     const dotY = ry
     const dotPage = pageIndex
 
-    doc.fillColor(TEXT).font('Helvetica').fontSize(8.5).text(exp.period, TX, ry, { width: TW })
+    doc.fillColor(TEXT).font(FREG).fontSize(8.5).text(exp.period, TX, ry, { width: TW })
     ry = doc.y + 1
     if (exp.company) {
       const line = exp.location ? `${exp.company} | ${exp.location}` : exp.company
-      doc.fillColor(TEXT).font('Helvetica').fontSize(8.5).text(line, TX, ry, { width: TW })
+      doc.fillColor(TEXT).font(FREG).fontSize(8.5).text(line, TX, ry, { width: TW })
       ry = doc.y + 3
     }
-    doc.fillColor(TEXT).font('Helvetica-Bold').fontSize(11).text(exp.title, TX, ry, { width: TW })
+    doc.fillColor(TEXT).font(FBOLD).fontSize(11).text(exp.title, TX, ry, { width: TW })
     ry = doc.y + 4
 
     if (exp.bullets?.length) {
-      doc.fillColor(TEXT).font('Helvetica').fontSize(9)
+      doc.fillColor(TEXT).font(FREG).fontSize(9)
       for (const b of exp.bullets) {
         doc.text('•  ' + b, TX, ry, { width: TW, lineGap: 1 })
         ry = doc.y + 1
@@ -164,7 +195,7 @@ export async function buildResumePdf (resume: Resume): Promise<Buffer> {
 
     if (exp.impact) {
       ry += 2
-      doc.fillColor(TEXT).font('Helvetica-Bold').fontSize(9).text('Impact : ' + exp.impact, TX, ry, { width: TW })
+      doc.fillColor(TEXT).font(FBOLD).fontSize(9).text('Impact : ' + exp.impact, TX, ry, { width: TW })
       ry = doc.y + 10
     } else {
       ry += 8
