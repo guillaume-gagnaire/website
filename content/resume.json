@@ -32,6 +32,7 @@
   ],
   "experiences": [
     {
+      "slug": "freelance",
       "period": "2023 - Présent",
       "company": "GAGNAIRE Développement",
       "location": "Freelance",
@@ -44,9 +45,11 @@
       ],
       "impact": "Outils déployés auprès de 700 collaborateurs internes. 70k€ économisés en 2 semaines de développement",
       "stack": ["NodeJS", "TypeScript", "VueJS", "Design System", "OpenAI", "Mentorat"],
-      "tags": ["freelance", "lead-dev", "amoa", "ia", "design-system"]
+      "tags": ["freelance", "lead-dev", "amoa", "ia", "design-system"],
+      "metaDescription": "Lead dev fullstack et AMOA technique en freelance depuis 2023 : Groupama Gan Vie, Bordeaux Métropole Energies, New Heat, Noci. 700 utilisateurs internes outillés."
     },
     {
+      "slug": "smart-moov",
       "period": "2021 - 2023",
       "company": "Smart Moov",
       "location": "Paris (remote)",
@@ -57,9 +60,11 @@
       ],
       "impact": "Réduction du temps de génération d'un contrat d'intérim de 5h à 5 minutes (-98%)",
       "stack": ["NodeJS", "TypeScript", "VueJS", "PWA", "Chatbot", "RH-tech"],
-      "tags": ["cto", "saas", "rh", "chatbot", "mobile"]
+      "tags": ["cto", "saas", "rh", "chatbot", "mobile"],
+      "metaDescription": "CTO chez Smart Moov : conception et développement d'une suite produit pour l'intérim digital. Génération de contrat passée de 5h à 5 minutes."
     },
     {
+      "slug": "noci",
       "period": "2019 - 2024",
       "company": "Noci.io",
       "location": "Bordeaux",
@@ -71,9 +76,11 @@
       ],
       "impact": "Plateforme maintenue 2 ans sans incident après mon départ, avec zéro dev dédié",
       "stack": ["NodeJS", "Microservices", "OpenAI", "Chatbot", "SaaS"],
-      "tags": ["cto", "saas", "ia", "leadership", "mentorat"]
+      "tags": ["cto", "saas", "ia", "leadership", "mentorat"],
+      "metaDescription": "CTO de Noci.io : pilotage d'une plateforme SaaS de chatbot IA pour le service client à Bordeaux, encadrement de 3 développeurs et migration microservices."
     },
     {
+      "slug": "before-2019",
       "period": "2006 - 2018",
       "company": "Expériences antérieures",
       "location": "",
@@ -84,7 +91,8 @@
       ],
       "impact": "",
       "stack": ["Fullstack", "Entrepreneuriat", "Freelance"],
-      "tags": ["entrepreneur", "freelance", "fullstack"]
+      "tags": ["entrepreneur", "freelance", "fullstack"],
+      "metaDescription": "Plus de 12 ans d'expériences en développement fullstack et entrepreneuriat avant 2019 : co-fondateur d'UrDoor, freelance pour plusieurs agences."
     }
   ],
   "references": "Disponibles sur demande."
