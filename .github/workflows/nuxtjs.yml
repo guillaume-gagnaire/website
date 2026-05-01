@@ -1,10 +1,9 @@
 # https://github.com/actions/deploy-pages#usage
 name: Deploy to GitHub Pages
+# Disabled: site is now deployed via Coolify (Dockerfile).
+# Kept as workflow_dispatch only so it can still be triggered manually if needed.
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - main
 jobs:
   build:
     runs-on: ubuntu-latest
