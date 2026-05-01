@@ -11,6 +11,11 @@ export default defineNuxtConfig({
     'nuxt-og-image',
     '@nuxthq/studio'
   ],
+  runtimeConfig: {
+    resumePassword: process.env.NUXT_RESUME_PASSWORD || '',
+    openaiApiKey: process.env.NUXT_OPENAI_API_KEY || '',
+    openaiModel: process.env.NUXT_OPENAI_MODEL || 'gpt-4o-mini'
+  },
   hooks: {
     // Define `@nuxt/ui` components as global to use them in `.md` (feel free to add those you need)
     'components:extend': components => {

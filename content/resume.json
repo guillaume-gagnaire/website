@@ -1,0 +1,91 @@
+{
+  "personal": {
+    "firstName": "Guillaume",
+    "lastName": "Gagnaire",
+    "title": "CTO",
+    "email": "guillaume@gagnaire.dev",
+    "phone": "+33 (0)6 52 35 18 22",
+    "location": "Bordeaux, France",
+    "photo": "/me.png"
+  },
+  "profile": "Depuis 2006, j'évolue à l'intersection du code et du business, principalement dans des startups où tout reste à construire. J'ai occupé le rôle de CTO dans deux contextes SaaS très différents — une agence d'intérim digitale et une plateforme de service client IA — en prenant en charge aussi bien l'architecture technique que la vision produit et la montée en compétence des équipes.\n\nCe qui me motive : transformer une idée floue en produit utilisable, choisir les bons combats techniques au bon moment, et créer un environnement où les développeurs progressent et s'investissent. Je reste volontairement hands-on — pas pour tout contrôler, mais pour garder le contact avec la réalité du code.",
+  "expertise": [
+    "NodeJS / TypeScript",
+    "VueJS / Angular",
+    "MongoDB / Postgres",
+    "Kubernetes / DevOps",
+    "IA générative",
+    "Entreprenariat",
+    "Leadership & mentorat",
+    "Vision produit"
+  ],
+  "education": [
+    {
+      "school": "EPITECH",
+      "degree": "Bachelor",
+      "year": "2011"
+    }
+  ],
+  "languages": [
+    { "name": "Français", "level": "natif" },
+    { "name": "Anglais", "level": "professionnel" }
+  ],
+  "experiences": [
+    {
+      "period": "2023 - Présent",
+      "company": "GAGNAIRE Développement",
+      "location": "Freelance",
+      "title": "Freelance - Lead dev & AMOA",
+      "bullets": [
+        "Lead dev fullstack - Groupama Gan Vie : 8 projets métiers / AI, mentorat d'équipe",
+        "Lead dev frontend - Bordeaux Métropole Energies : design + dev du nouvel espace client + design system du groupe",
+        "AMOA technique - New Heat",
+        "Intégration AI - Noci.io"
+      ],
+      "impact": "Outils déployés auprès de 700 collaborateurs internes. 70k€ économisés en 2 semaines de développement",
+      "stack": ["NodeJS", "TypeScript", "VueJS", "Design System", "OpenAI", "Mentorat"],
+      "tags": ["freelance", "lead-dev", "amoa", "ia", "design-system"]
+    },
+    {
+      "period": "2021 - 2023",
+      "company": "Smart Moov",
+      "location": "Paris (remote)",
+      "title": "CTO",
+      "bullets": [
+        "Conception et développement d'une suite produit complète pour l'intérim digital",
+        "Chatbot sur mesure, plateforme RH (recrutement, paie, relevés d'heures), app mobile PWA"
+      ],
+      "impact": "Réduction du temps de génération d'un contrat d'intérim de 5h à 5 minutes (-98%)",
+      "stack": ["NodeJS", "TypeScript", "VueJS", "PWA", "Chatbot", "RH-tech"],
+      "tags": ["cto", "saas", "rh", "chatbot", "mobile"]
+    },
+    {
+      "period": "2019 - 2024",
+      "company": "Noci.io",
+      "location": "Bordeaux",
+      "title": "CTO",
+      "bullets": [
+        "Pilotage technique et produit d'une plateforme SaaS de chatbot IA (conseil produit & service client)",
+        "Encadrement de 3 développeurs juniors, revues de code, montée en compétences",
+        "Migration vers microservices NodeJS, intégration IA générative (OpenAI)"
+      ],
+      "impact": "Plateforme maintenue 2 ans sans incident après mon départ, avec zéro dev dédié",
+      "stack": ["NodeJS", "Microservices", "OpenAI", "Chatbot", "SaaS"],
+      "tags": ["cto", "saas", "ia", "leadership", "mentorat"]
+    },
+    {
+      "period": "2006 - 2018",
+      "company": "Expériences antérieures",
+      "location": "",
+      "title": "Expériences antérieures",
+      "bullets": [
+        "CTO / Co-founder UrDoor (2013)",
+        "Développeur web freelance : SeoBeach, Fonxio, Seoizi, Rudy Som"
+      ],
+      "impact": "",
+      "stack": ["Fullstack", "Entrepreneuriat", "Freelance"],
+      "tags": ["entrepreneur", "freelance", "fullstack"]
+    }
+  ],
+  "references": "Disponibles sur demande."
+}
