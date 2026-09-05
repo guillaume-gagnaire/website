@@ -1,0 +1,152 @@
+title: Parcours
+description: 'Quinze ans de parcours, de développeur PHP à CTO : startups, PME et grands comptes, avec les projets et les chiffres qui vont avec.'
+navigation.icon: i-heroicons-map
+hero:
+  title: Quinze ans de terrain, trois fois CTO.
+  description: 'J''ai commencé en 2011 par du PHP et de l''automatisation, j''ai cofondé une startup, dirigé des équipes techniques, et je code toujours au quotidien. Startups early-stage, PME et grands comptes : j''ai livré dans les trois contextes, souvent seul de bout en bout. Ce qui ne change jamais, c''est ce que le produit doit rapporter au business.'
+stats:
+  items:
+    - value: 15 ans
+      label: d'expérience en développement, depuis 2011
+    - value: 3
+      label: 'mandats de CTO : UrDoor, Noci, Smart Moov'
+    - value: 70 000 €
+      label: d'économies annuelles chez Groupama Gan Vie
+    - value: 50 M
+      label: de mails par an gérés chez Naxxt
+timeline:
+  - period: Avril 2025 - aujourd'hui
+    company: Groupama Gan Vie
+    role: Ingénieur Full Stack
+    location: Mérignac, hybride
+    type: Freelance
+    icon: i-heroicons-building-office
+    description: Neuf applications métier livrées, de l'outil de gestion interne à la plateforme de bilan de protection sociale des entrepreneurs. Un moteur de calcul des régimes obligatoires conçu, développé et mis en production en deux semaines. Première mission menée entièrement en full IA.
+    to: /projects/groupama
+  - period: Juin 2024 - Mars 2025
+    company: Bordeaux Métropole Énergies
+    role: Lead Developer Frontend
+    location: Bordeaux, hybride
+    type: Freelance
+    icon: i-heroicons-bolt
+    description: Tunnel de souscription en cinq étapes et espace client Gaz de Bordeaux, dont 80 % du front livrés en un mois. Design system Vue 3 conçu de bout en bout, encore en service sur les autres applications de BME.
+    to: /projects/bme
+  - period: 2023 - aujourd'hui
+    company: Good Morning Business
+    role: Conception, design et développement
+    location: Bordeaux
+    type: Freelance
+    icon: i-heroicons-users
+    description: 'Application de recommandations d''affaires pour un réseau d''entrepreneurs : 3 bureaux, 80 membres, 250 000 € de recommandations par an. PWA packagée sur les stores, conçue et développée par mes soins, toujours maintenue.'
+    to: /projects/gmb
+  - period: Nov. 2021 - Mai 2023
+    company: Smart Moov
+    role: CTO
+    location: Bordeaux
+    type: CDI
+    icon: i-heroicons-rocket-launch
+    description: 'CTO et seul développeur d''une plateforme SaaS de gestion d''intérimaires : 50 clients en production, 1 500 contrats générés, une quinzaine d''intégrations ATS. L''onboarding administratif d''un intérimaire est passé de 2 à 3 heures à 10 minutes.'
+    to: /projects/smartmoov
+  - period: Févr. 2020 - Oct. 2021
+    company: Noci by digital'ize
+    role: CTO
+    location: Bordeaux
+    type: Temps plein
+    icon: i-heroicons-cpu-chip
+    description: 'Direction technique du produit après une promotion interne : 50 000 conversations par mois, CI/CD et Kubernetes, et une équipe de 3 développeurs que j''ai recrutés moi-même. Clients Decathlon, Fnac Darty, Destination Cocktails.'
+    to: /projects/noci
+  - period: Janv. 2019 - Janv. 2020
+    company: Noci by digital'ize
+    role: Senior Lead Developer
+    location: Bordeaux
+    type: Temps plein
+    icon: i-heroicons-command-line
+    description: Arrivé comme lead developer sur la plateforme conversationnelle de Noci, où j'ai posé le socle technique du produit. Un an plus tard, promotion interne à la direction technique, avec l'équipe et l'infrastructure qui vont avec.
+    to: /projects/noci
+  - period: Sept. 2018 - Janv. 2019
+    company: Groupe CREATIVE
+    role: Lead Developer
+    location: Bordeaux Métropole, DGNSI
+    type: Salarié
+    icon: i-heroicons-map
+    description: Mission au sein de la direction du numérique de Bordeaux Métropole, sur le système d'information géographique. Cinq mois en PHP, avant de rejoindre Noci.
+  - period: Juil. 2016 - Juil. 2018
+    company: Naxxt
+    role: Fullstack Lead Developer
+    location: Bordeaux
+    type: Salarié
+    icon: i-heroicons-server-stack
+    description: 'Data Management Platform conçue et développée seul, de bout en bout : jusqu''à 50 millions de mails par an encaissés sur un unique serveur dédié. Deux ans à porter un produit entier, de la conception à la production.'
+    to: /projects/naxxt
+  - period: Sept. 2015 - Juil. 2017
+    company: Sup de Pub - Groupe INSEEC
+    role: Enseignant
+    location: Bordeaux
+    type: Enseignement
+    icon: i-heroicons-academic-cap
+    description: 'Initiation au PHP pour de futurs chefs de projet digital : 35 étudiants et 50 heures par an. L''objectif n''était pas d''en faire des développeurs, mais qu''ils sachent dialoguer avec les leurs.'
+    to: /projects/supdepub
+  - period: Nov. 2013 - Juil. 2016
+    company: Nala Multimédia
+    role: Lead Web Developer
+    location: Bordeaux
+    type: Salarié
+    icon: i-heroicons-map
+    description: 'Responsable du développement de Caramaps : 150 000 points d''intérêt, 50 000 membres, et une recherche géographique servie sur du MySQL brut. Le site est toujours en ligne aujourd''hui.'
+    to: /projects/caramaps
+  - period: Janv. - Nov. 2013
+    company: UrDoor
+    role: CTO et co-fondateur
+    location: Paris
+    type: Co-fondateur
+    icon: i-heroicons-light-bulb
+    description: Livraison à la demande, avant que le marché n'existe en France. Algorithme de logistique optimisant les tournées selon le trajet, l'encombrement et le poids, et cartes prépayées rechargées en temps réel. Arrêt faute de budget.
+    to: /projects/urdoor
+  - period: Sept. 2012 - Avril 2013
+    company: SeoBeach
+    role: Lead Developer
+    location: France
+    type: Freelance
+    icon: i-heroicons-arrow-trending-up
+    description: Conception et développement d'un assistant virtuel au référencement - on-page, off-site, local et naturel - avec l'administration du serveur Debian qui allait avec.
+    to: /projects/seobeach
+  - period: Févr. - Déc. 2012
+    company: Fonxio
+    role: Lead Developer, consultant PHP
+    location: Avignon
+    type: Freelance
+    icon: i-heroicons-phone-20-solid
+    description: 'Paiement par carte bancaire entre particuliers, saisi sur un serveur vocal Twilio. En 2012, la voix comme interface de paiement : le système est allé jusqu''en production, avec de vrais paiements passés dessus.'
+    to: /projects/fonxio
+  - period: Mars - Oct. 2012
+    company: Seoizi
+    role: Lead Developer
+    location: France
+    type: Freelance
+    icon: i-heroicons-cog
+    description: 'Outil d''automatisation du référencement : un parc de serveurs pour la publication de communiqués de presse, et des outils de spinning de contenu. Du black hat assumé, mais une vraie école d''orchestration.'
+    to: /projects/seoizi
+  - period: Avril - Mai 2012
+    company: Rent A Bike In France
+    role: Lead Developer
+    location: France
+    type: Freelance
+    icon: i-heroicons-globe-alt
+    description: Annuaire des magasins de location de vélos en France, développé et optimisé pour le référencement en deux mois. Il est resté des années en première position sur « location de vélo France ».
+    to: /projects/rentabike
+  - period: Avril - Août 2011
+    company: Rudy Som
+    role: Développeur PHP, R&D
+    location: Toulouse
+    type: Freelance
+    icon: i-heroicons-beaker
+    description: 'Ma première mission, en 2011 : du développement PHP et de la R&D, en freelance. Le point de départ des quinze années qui ont suivi, et de tout ce qui est plus haut dans cette page.'
+    to: /projects/rudysom
+cta:
+  title: Et si la prochaine ligne, c'était la vôtre ?
+  description: Dites-moi où vous en êtes, je vous dis franchement ce que je peux faire et comment je m'y prendrais.
+  links:
+    - label: Travaillons ensemble
+      size: xl
+      color: black
+      to: /contact

@@ -62,16 +62,28 @@ useSeoMeta({
       <Avatar />
     </ULandingSection>
 
-    <!-- <ULandingSection
+    <ULandingSection
       v-for="(section, index) in page.sections"
       :key="index"
+      :headline="section.headline"
       :title="section.title"
       :description="section.description"
       :align="section.align"
       :features="section.features"
     >
-      <Placeholder />
-    </ULandingSection>-->
+      <div
+        class="rounded-xl bg-gg-300/40 dark:bg-gg-600/40 p-8 h-full flex flex-col justify-center gap-8"
+      >
+        <div v-for="(stat, i) in section.stats" :key="i">
+          <p class="text-3xl sm:text-4xl font-bold text-primary-600 dark:text-primary-400">
+            {{ stat.value }}
+          </p>
+          <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">
+            {{ stat.label }}
+          </p>
+        </div>
+      </div>
+    </ULandingSection>
 
     <ULandingSection
       :title="page.features.title"

@@ -20,7 +20,7 @@ const { data: surround } = await useAsyncData(
     queryContent('/projects')
       .where({ _extension: 'md' })
       .without(['body', 'excerpt'])
-      .sort({ date: -1 })
+      .sort({ order: 1 })
       .findSurround(withoutTrailingSlash(route.path)),
   { default: () => [] }
 )
@@ -60,8 +60,34 @@ const modalText = ref('')
   <UContainer v-if="post">
     <UPageHeader :title="post.title" :description="post.description">
       <template #headline>
-        <UBadge v-bind="{ label: post.type }" variant="subtle" />
+        <div class="flex flex-wrap items-center gap-2">
+          <UBadge :label="post.type" variant="subtle" />
+          <UBadge
+            v-if="post.period"
+            :label="post.period"
+            variant="subtle"
+            color="gray"
+          />
+        </div>
       </template>
+
+      <p
+        v-if="post.role"
+        class="mt-4 text-sm font-medium text-gray-500 dark:text-gray-400"
+      >
+        {{ post.role }}
+      </p>
+
+      <div class="flex flex-wrap items-center gap-3 mt-4">
+        <UBadge
+          v-for="tag in tagsEtendus(post.tags)"
+          :key="tag"
+          :label="tag"
+          variant="outline"
+          color="gray"
+          size="xs"
+        />
+      </div>
 
       <div class="flex flex-wrap items-center gap-3 mt-4">
         <UButton

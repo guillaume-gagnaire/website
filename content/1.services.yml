@@ -1,0 +1,84 @@
+title: Services
+description: "Développement fullstack, direction technique et IA appliquée : ce que je fais, comment je travaille et dans quelles conditions j'interviens."
+navigation.icon: i-heroicons-briefcase
+hero:
+  title: "Je code, je cadre, je parle business."
+  description: "CTO trois fois, développeur depuis 2011. J'interviens de la conception à la mise en production, seul ou avec vos équipes, aussi bien sur un produit de startup que dans le système d'un grand compte. Ce qui compte au bout, c'est ce que ça rapporte."
+  links:
+    - label: Parlons de votre projet
+      size: xl
+      color: primary
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+      to: /contact
+statement:
+  quote: "Ce qui m'intéresse, c'est que le business tourne. J'ai une vision produit et business qui me pousse à chercher la solution qui fait gagner du temps ou de l'argent : automatiser, simplifier, ou inventer un usage qui n'existait pas. Je me projette très vite dans un nouveau secteur, donc je ne me fixe aucune limite."
+  author: Guillaume Gagnaire
+offers:
+  headline: Prestations
+  title: Ce que je fais concrètement
+  description: "Six façons de travailler ensemble, du coup de main ciblé à la prise en charge complète d'un produit."
+  items:
+    - title: Développement web fullstack
+      description: "De la conception à la mise en production, sans intermédiaire. Angular, Vue, NestJS, Django, PostgreSQL. Chez Groupama Gan Vie, neuf applications métier livrées depuis avril 2025."
+      icon: i-heroicons-code-bracket
+    - title: IA appliquée au produit
+      description: "OCR, modèles vision-langage, chatbots cadrés. Et je développe moi-même en full IA avec Claude Code, au quotidien : Groupama Gan Vie est la première entreprise où je travaille de cette façon."
+      icon: i-heroicons-cpu-chip
+    - title: Direction technique à temps partagé
+      description: "CTO trois fois : UrDoor, Noci.io, Smart Moov. Cadrage, architecture, recrutement - j'ai constitué moi-même l'équipe de trois développeurs de Noci - et encadrement au quotidien, y compris de juniors."
+      icon: i-heroicons-presentation-chart-line
+    - title: "Passage à l'échelle et fiabilité"
+      description: "Chez Naxxt, une plateforme de données qui envoyait 50 millions de mails par an sur un seul serveur dédié. Chez Caramaps, 150 000 points d'intérêt et une recherche géo sur MySQL. Chez Noci.io, CI/CD et Kubernetes."
+      icon: i-heroicons-server-stack
+    - title: Design produit mesuré
+      description: "Maquettes Figma et design system : celui que j'ai conçu en Vue 3 pour Bordeaux Métropole Énergies est réutilisé sur beaucoup de leurs applications. Je ne suis pas expert UI/UX, je fais du design juste, pas du design primé."
+      icon: i-heroicons-paint-brush
+    - title: Transfert de compétences
+      description: "Pair programming, revues de code, formation. J'ai enseigné le PHP à Sup de Pub, 35 étudiants par an, et j'ai fait monter en mission des développeurs qui occupent aujourd'hui des postes de lead."
+      icon: i-heroicons-academic-cap
+method:
+  headline: Méthode
+  title: Comment je travaille
+  description: "Je cherche d'abord ce qui débloque le business, puis je livre par petits morceaux jusqu'à la production."
+  features:
+    - name: Je cadre avant de coder
+      description: "Je commence par comprendre le métier et ce que ça rapporte. Chez Groupama Gan Vie, deux semaines sur le moteur de calcul des régimes obligatoires ont dégagé 70 000 € d'économies par an."
+      icon: i-heroicons-map
+    - name: Je livre vite et en continu
+      description: "Chez Bordeaux Métropole Énergies, le tunnel de souscription à cinq étapes et 80 % du front en un mois. Je préfère mettre en production tôt et corriger sur du réel plutôt qu'en réunion."
+      icon: i-heroicons-bolt
+    - name: Je prends des initiatives
+      description: "L'espace client de Bordeaux Métropole Énergies n'était pas au programme : je l'ai proposé et conçu de ma propre initiative, parce que le produit en avait besoin."
+      icon: i-heroicons-light-bulb
+  highlights:
+    - title: Un seul interlocuteur
+      description: "J'ai souvent porté des projets entiers seul, de Naxxt à Smart Moov où j'étais CTO et seul développeur. Pas de relais entre celui qui conçoit et celui qui livre, donc pas de perte en ligne."
+      icon: i-heroicons-briefcase
+    - title: Des résultats mesurables
+      description: "Chez Smart Moov, 50 clients réellement en production, et l'onboarding administratif d'un intérimaire ramené de 2 à 3 heures à 10 minutes."
+      icon: i-heroicons-arrow-trending-up
+    - title: "À l'aise dans un métier nouveau"
+      description: "Assurance, énergie, intérim, retail, réseaux d'entrepreneurs : j'ai livré dans ces cinq secteurs, chacun avec ses règles métier apprises de zéro."
+      icon: i-heroicons-globe-alt
+terms:
+  headline: Conditions
+  title: "Le cadre, sans détour"
+  description: "Ce qu'il faut savoir avant de m'écrire."
+  items:
+    - label: Tarif
+      value: TJM sur demande
+    - label: Lieu
+      value: Remote ou Bordeaux
+    - label: Disponibilité
+      value: Toujours disponible
+    - label: Format
+      value: Régie ou forfait
+cta:
+  title: "Un projet à cadrer, à reprendre ou à livrer ?"
+  description: "Dites-moi où vous en êtes, je vous dis franchement si je suis le bon profil."
+  links:
+    - label: Discutons-en
+      size: xl
+      color: black
+      to: /contact

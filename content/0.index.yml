@@ -1,9 +1,9 @@
 title: Guillaume Gagnaire | CTO hands-on freelance à Bordeaux
-description: J'aide les CEO de startups early-stage à transformer leurs idées en scale-up !
+description: "Je construis des produits web de bout en bout, du cadrage à la production, pour des startups early-stage comme pour des grands comptes."
 navigation: false
 hero:
   title: Salut 👋 ! Je suis Guillaume, CTO et développeur web fullstack freelance.
-  description: J'aide les CEO de startups early-stage à transformer leurs idées en scale-up !
+  description: "Je transforme une idée ou un besoin métier en produit qui tourne en production. Startups early-stage, assureurs, énergie : je code, je cadre, et je parle business."
   headline:
     - label: Linkedin
       to: https://www.linkedin.com/in/guillaume-gagnaire/
@@ -21,71 +21,75 @@ hero:
       icon: i-heroicons-arrow-right-20-solid
       trailing: true
       to: /contact
+    - label: Mes services
+      size: xl
+      color: white
+      to: /services
 sections:
-  - title: The power of our service
-    description: Aliqua labore laboris fugiat. Reprehenderit exercitation eu commodo. Officia nostrud sit et aliqua ea ex sunt minim incididunt sunt.
-    id: features
+  - headline: Ce que je fais
+    title: Des produits livrés, pas des slides
+    description: "Startups early-stage ou grands comptes, la méthode ne change pas : comprendre le métier, cadrer, livrer vite, puis itérer sur ce qui sert vraiment le business."
+    id: realisations
     align: left
     features:
-      - name: Easy to use
-        description: Id laborum laboris duis nostrud excepteur ut velit.
-        icon: i-heroicons-cog
-      - name: Reliable
-        description: Magna Lorem ex cillum fugiat ad enim aute irure sit duis minim.
-        icon: i-heroicons-check
-      - name: Secure
-        description: Proident nostrud excepteur sint ut culpa consectetur aute adipisicing.
-        icon: i-heroicons-lock-closed
-    links:
-      - label: Explore components
-        to: /pro/components
-        color: gray
-        icon: i-heroicons-arrow-right-20-solid
-        trailing: true
-        size: md
-        class: ml-8
-  - title: The speed of our service
-    description: Cillum sint enim excepteur ut deserunt qui nisi in deserunt in. Deserunt aliquip quis aliquip eu quis ex velit velit nostrud sit.
+      - name: Du cadrage à la production
+        description: "Je prends le sujet au début, avec les gens du métier, et je le tiens jusqu'au déploiement : architecture, développement, mise en production, puis suivi de ce qui tourne."
+        icon: i-heroicons-map
+      - name: Seul ou en encadrant
+        description: "Je sais porter un produit entier tout seul, comme chez Smart Moov, et faire monter des juniors quand une équipe existe."
+        icon: i-heroicons-users
+      - name: Un design mesuré, annoncé comme tel
+        description: "Je fais les maquettes et les design systems quand il le faut : celui de Bordeaux Métropole Énergies leur sert encore aujourd'hui. Ce n'est pas mon métier premier, mais ça tient."
+        icon: i-heroicons-paint-brush
+    stats:
+      - value: 9
+        label: applications métier livrées chez un assureur
+      - value: 50
+        label: clients en production sur une plateforme RH
+      - value: 15 ans
+        label: à concevoir et développer des produits web
+  - headline: Ma façon de travailler
+    title: "L'IA au quotidien, le business en ligne de mire"
+    description: "Je développe désormais en full IA, et je diffuse ces pratiques dans les équipes. Ce qui compte reste le même : trouver ce qui fait avancer le business, par l'automatisation, la simplification ou de nouveaux usages."
     align: right
     features:
-      - name: Fast
-        description: Qui reprehenderit nostrud dolore nisi ad fugiat labore eiusmod.
-        icon: i-heroicons-rocket-launch
-      - name: Affordable
-        description: Reprehenderit fugiat elit in do ipsum ut pariatur.
-        icon: i-heroicons-currency-dollar
-      - name: Scalable
-        description: Lorem deserunt et eiusmod. Ea in consectetur minim officia.
-        icon: i-heroicons-chart-bar
-    links:
-      - label: Learn more
-        to: /pro/guide/content
-        color: gray
-        icon: i-heroicons-arrow-right-20-solid
-        trailing: true
-        size: md
-        class: ml-8
+      - name: Je développe en full IA
+        description: "Chez Groupama Gan Vie, je travaille en full IA avec Claude Code au quotidien, sur des projets métier entiers."
+        icon: i-heroicons-sparkles
+      - name: Le business avant le code
+        description: "Assurance, énergie, RH, retail : je me projette très facilement dans un nouveau secteur, et je cherche d'abord là où le code fait gagner du temps ou de l'argent."
+        icon: i-heroicons-arrow-trending-up
+      - name: Je laisse une équipe plus forte
+        description: "Je transmets ce que je sais, en mission comme en cours. Le développeur front que j'ai coaché à Bordeaux Métropole Énergies est aujourd'hui lead front chez eux."
+        icon: i-heroicons-academic-cap
+    stats:
+      - value: 70 000 €
+        label: économisés chaque année, en deux semaines de travail
+      - value: 3 fois
+        label: CTO, chez UrDoor, Noci.io et Smart Moov
+      - value: 35
+        label: étudiants formés chaque année à Sup de Pub
 features:
   title: Mes compétences
   description: Et j'adore en apprendre plus!
   items:
-    - title: Développement fullstack JS
-      description: Typescript, NodeJS, VueJS, MongoDB, MySQL ...
-      icon: i-simple-icons-visualstudiocode
+    - title: Développement fullstack
+      description: "Typescript, Vue, Angular, NestJS, Django, PostgreSQL, MariaDB ... je prends la stack du contexte, pas la mienne"
+      icon: i-heroicons-code-bracket
     - title: DevOps
-      description: Github Actions, Kubernetes ❤️
-      icon: i-simple-icons-codeship
-    - title: IA générative
-      description: J'intègre de l'IA dans les produits pour optimiser les process, et augmenter la productivité
-      icon: i-material-symbols-light-robot-2-outline
+      description: CI/CD, Kubernetes, Airflow ❤️
+      icon: i-heroicons-server-stack
+    - title: Développement full IA
+      description: "J'embarque de l'IA dans les produits : OCR, lecture de documents, chatbots qui restent dans leur périmètre 🤖"
+      icon: i-heroicons-sparkles
     - title: Transfert de compétences
-      description: J'adore enseigner et transmettre mon expérience 👨‍🏫
+      description: "J'adore enseigner et transmettre mon expérience, aux juniors comme aux équipes en place 👨‍🏫"
       icon: i-heroicons-academic-cap
     - title: Care
       description: J'aime prendre soin des gens avec qui je travaille 🤗
       icon: i-heroicons-heart
     - title: Vision business
-      description: Le beau code ne sert à rien s'il n'est pas au service du business
+      description: "Le beau code ne sert à rien s'il n'est pas au service du business, en startup comme en grand compte"
       icon: i-heroicons-building-office
 testimonials:
   headline: Témoignages
