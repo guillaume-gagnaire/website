@@ -22,6 +22,14 @@ export default defineNuxtConfig({
   ui: {
     icons: ['heroicons', 'simple-icons']
   },
+  // GitHub Pages ne sert que des fichiers statiques : l'endpoint /_ipx n'existe
+  // pas et seules les images referencees par une page prerendue sont generees.
+  // La liste des projets n'affiche que la page 1 au prerender, donc les visuels
+  // des pages suivantes renvoyaient des 404. Les cartes sont deja aux bonnes
+  // dimensions dans public/, on sert donc directement l'URL d'origine.
+  image: {
+    provider: 'none'
+  },
   routeRules: {
     '/api/search.json': { prerender: true },
     '/docs': { redirect: '/docs/getting-started', prerender: false }
